@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Google Maps</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+      }
+
+      .map {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .search {
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        width: 450px;
+        padding: 18px;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 2px 8px gray;
+      }
+
+      .buttons {
+        position: absolute;
+        top: 15px;
+        left: 600px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .buttons button {
+        padding: 12px 18px;
+        background: white;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 2px 5px gray;
+        font-size: 15px;
+      }
+
+      .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 100%;
+        background: white;
+        text-align: center;
+        padding-top: 25px;
+      }
+
+      .sidebar p {
+        margin: 35px 0;
+        font-size: 14px;
+      }
+
+      .zoom {
+        position: absolute;
+        right: 20px;
+        bottom: 50px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .zoom button {
+        padding: 12px;
+        background: white;
+        border: 1px solid lightgray;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="map">
+      <iframe
+        src="https://maps.google.com/maps?q=12.9859584,77.6962048&z=14&output=embed"
+      >
+      </iframe>
+
+      <div class="search">🔍 Search Google Maps</div>
+
+      <div class="buttons">
+        <button>🍴 Restaurants</button>
+        <button>🏨 Hotels</button>
+        <button>📷 Things to do</button>
+        <button>🏛 Museums</button>
+        <button>🚆 Transit</button>
+      </div>
+
+      <div class="sidebar">
+        <h2>☰</h2>
+        <p>✨<br />Ask Maps</p>
+        <p>🔖<br />Saved</p>
+        <p>🕘<br />Recents</p>
+        <p>📱<br />Get app</p>
+      </div>
+
+      <div class="zoom">
+        <button>+</button>
+        <button>−</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -12,3 +12,6 @@ from django.http import HttpResponse
 
 def index(request):
   return HttpResponse("Hello, world. You're at the google_maps app index.")
+
+def maps(request):
+    return render(request, 'maps/maps.html')
